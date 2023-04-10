@@ -18,19 +18,18 @@ body {
 #card h1 {
   font-family: 'Delicious Handrawn', cursive;
   font-size: 56px;
-  color: rgba(34, 222, 222, 0.85);
+  color: rgba(47, 242, 242, 0.85);
   margin: 0 0 16px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: 8px;
 }
-.col-sm-6 {
-  width: 50%;
+.col {
   display: flex;
   justify-content: center;
+  margin: 8px;
 }
 .ih-item {
   position: relative;
@@ -57,8 +56,8 @@ body {
 
 .ih-item.square {
   position: relative;
-  width: 350px;
-  height: 350px;
+  max-width: 350px;
+  max-height: 350px;
   border: 8px solid #fff;
   border-radius: 4px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);

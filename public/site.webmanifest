@@ -1,0 +1,27 @@
+{
+  "short_name": "Somos Locos",
+  "name": "Somos Locos",
+  "icons": [
+    {
+      "src": "https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/images/icons-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "https://www.somoslocos.co",
+  "background_color": "ee8987",
+  "display": "browser",
+  "scope": "/",
+  "theme_color": "#dee1e6",
+  "description": "Designed to give insight into the lives that make up Somos Locos"
+}

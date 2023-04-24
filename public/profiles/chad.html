@@ -36,16 +36,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
   </head>
 
-  <header>
-    <a href="https://somoslocos.co">
-      <img
-        class="image"
-        src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/icons-vector.svg"
-        alt="SL"
-      />
+  <header class="header">
+    <a class="header__link" href="https://somoslocos.co">
+      <span class="header__logo">Somos Locos</span>
+      <span class="header__logo-sm">SL</span>
     </a>
     <div class="dropdown">
-      <button class="dropbtn">Los Locos</button>
+      <button class="dropbtn"><span class="dropbtn__first-word">Los</span> <span>Locos</span></button>
       <div class="dropdown-content">
         <a href="#">Natalia</a>
         <a href="#">Harrison</a>
@@ -117,8 +114,9 @@
         <div class="name">Chad Martinez</div>
       </div>
       <div class="card">
-        <div class="title-container">
-          <div class="title"><span class="first-word">About</span> Me</div>
+        <section id="about" class="internal-lnk"></section>
+        <div class="title">
+          <span>About</span>
         </div>
         <div class="row">
           <div class="col">
@@ -139,6 +137,10 @@
                 <div class="demo-item">USA</div>
               </div>
               <div class="row">
+                <div class="title-age">Languages. . . . .</div>
+                <div class="demo-item">English • Spanish</div>
+              </div>
+              <div class="row">
                 <div class="title-age">Speciality. . . . .</div>
                 <div class="demo-item">MERN</div>
               </div>
@@ -148,7 +150,8 @@
               </div>
               <div class="btn-container">
                 <a
-                  href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/files/Chad+Martinez+-+Resume.pdf" target="_blank"
+                  href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/files/Chad+Martinez+-+Resume.pdf"
+                  target="_blank"
                 >
                   <div class="btn btn-animation">Download CV</div>
                 </a>
@@ -158,10 +161,155 @@
         </div>
       </div>
       <div class="card">
-        <div class="title-container">
-          <div class="title">
-            <span class="first-word">My</span> Specialities
+        <section id="resume" class="internal-lnk"></section>
+        <div class="title">
+          <span>Resume</span>
+          <div class="download-btn">
+            <a
+                  href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/files/Chad+Martinez+-+Resume.pdf"
+                  target="_blank"
+                >
+            <img
+              src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/download.png"
+              alt="download"
+            />
+            </a>
           </div>
+        </div>
+        <div class="resume__topic">
+          <img
+            src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/experience.png"
+            alt="experience"
+          />
+          <span>Experience</span>
+        </div>
+        <div class="row">
+          <div class="resume__item">
+            <div class="resume__item--time present">
+              <span>Mar 2023 • Present</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Code Rico</span>
+            </div>
+            <div class="resume__item--text">
+              <p>Contract for hire. Specializing in MERN stack development.</p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>Nov 2021 • Nov 2022</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Jr. Software Engineer</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Blackburn Labs</span>
+            </div>
+            <div class="resume__item--text">
+              <p>
+                Multi-project support. Custom forms built with Sementic UI and
+                React Hook Form. Integration of cellular connected medical
+                equipment with 3rd party API.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>May 2021 • Nov 2021</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Big Country Technologies</span>
+            </div>
+            <div class="resume__item--text">
+              <p>
+                Project redesign for legacy charity site. Designed front-end
+                facing user experience. Implemented admin dashboard and user
+                management system.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>Jul 2021 • Oct 2021</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Kitchmet</span>
+            </div>
+            <div class="resume__item--text">
+              <p>
+                Integrated payment service for a Kitchen rental service using
+                Stripe Connect and Stripe Checkout APIs. Designed forms using
+                Formik and Yup to ensure proper validation and error handling.
+              </p>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>Aug 2020 • Apr 2021</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Full Stack Dev</span>
+            </div>
+            <div class="resume__item--place">
+              <span>HealthLog</span>
+            </div>
+            <div class="resume__item--text">
+              <p>
+                Engineered user dashboard with dynamically generated health logs
+                and custom charts. Integrated AWS TransferUtility SDK for image
+                and file management.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="resume__topic">
+          <img
+            src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/education.png"
+            alt="education"
+          />
+          <span>Education</span>
+        </div>
+        <div class="row">
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>Sep 2005 • May 2007</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Criminal Justice - BS</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Colorado Technical University</span>
+            </div>
+          </div>
+          <div class="resume__item">
+            <div class="resume__item--time">
+              <span>Sep 1998 • Jun 2000</span>
+            </div>
+            <div class="resume__item--title">
+              <span>Computer Information Systems - AAS</span>
+            </div>
+            <div class="resume__item--place">
+              <span>Hamilton College</span>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="resume__topic">
+          <img
+            src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/coding.png"
+            alt="coding"
+          />
+          <span>Speciality</span>
         </div>
         <div class="row">
           <div class="col">
@@ -215,118 +363,124 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="title-container">
-          <div class="title">
-            <span class="first-word">Skill</span> Rankings
-          </div>
+        <hr class="divider">
+        <div class="resume__topic">
+          <img
+            src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/skills.png"
+            alt="skills"
+          />
+          <span>Skills</span>
         </div>
-        <div class="skills">
-          <div class="skill-container">
-            <div class="skill">
-              <span>Javascript</span>
+        <div class="row">
+          <div class="skills">
+            <div class="skill-container">
+              <div class="skill">
+                <span>Javascript</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">90%</div>
             </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-empty"></div>
+            <div class="skill-container">
+              <div class="skill">
+                <span>React</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-half"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">85%</div>
             </div>
-            <div class="percent">90%</div>
-          </div>
-          <div class="skill-container">
-            <div class="skill">
-              <span>React</span>
+            <div class="skill-container">
+              <div class="skill">
+                <span>HTML5</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">80%</div>
             </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-half"></div>
-              <div class="cir-empty"></div>
+            <div class="skill-container">
+              <div class="skill">
+                <span>CSS3</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-half"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">65%</div>
             </div>
-            <div class="percent">85%</div>
-          </div><div class="skill-container">
-            <div class="skill">
-              <span>HTML5</span>
+            <div class="skill-container">
+              <div class="skill">
+                <span>MongoDB</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-half"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">75%</div>
             </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
+            <div class="skill-container">
+              <div class="skill">
+                <span>Flutter</span>
+              </div>
+              <div class="cir-container">
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-filled"></div>
+                <div class="cir-half"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+                <div class="cir-empty"></div>
+              </div>
+              <div class="percent">55%</div>
             </div>
-            <div class="percent">80%</div>
-          </div><div class="skill-container">
-            <div class="skill">
-              <span>CSS3</span>
-            </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-half"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-            </div>
-            <div class="percent">65%</div>
-          </div>
-          <div class="skill-container">
-            <div class="skill">
-              <span>MongoDB</span>
-            </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-half"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-            </div>
-            <div class="percent">75%</div>
-          </div><div class="skill-container">
-            <div class="skill">
-              <span>Flutter</span>
-            </div>
-            <div class="cir-container">
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-filled"></div>
-              <div class="cir-half"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-              <div class="cir-empty"></div>
-            </div>
-            <div class="percent">55%</div>
           </div>
         </div>
       </div>

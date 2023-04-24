@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
   height: 100vh;
 }
 
-header {
+.header {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -21,22 +22,37 @@ header {
   top: 0px;
   padding: 10px 15px;
   z-index: 22;
+  box-shadow: 0px 3px #efefef;
 }
 
-header img {
+.header__link {
+    text-decoration: none;
+    color: white;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 36px;
+    letter-spacing: 6px;
+}
+
+.header__img {
   max-height: 46px;
   width: auto;
+  display: none;
+}
+
+.header__logo-sm {
+    display: none;
 }
 
 .dropbtn {
   background-color: rgba(47, 242, 242, 0.85);
   color: white;
-  padding: 8px;
+  padding: 8px 6px;
   font-size: 24px;
   border: none;
   cursor: pointer;
   border-radius: 2px;
-  width: 99px;
+  width: 135px;
+  letter-spacing: 2px;
   font-family: 'Delicious Handrawn', cursive;
 }
 
@@ -180,17 +196,26 @@ header img {
   flex-direction: column;
   background-color: white;
   border-radius: 4px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
+  padding: 0px 0px 20px 0px;
   text-align: left;
   color: #838383;
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
 }
 
-.title-container {
-  background-color: #6b7896;
+section.internal-lnk {
+    position: absolute;
+    top: -80px;
 }
 
-div .title {
+.divider {
+    width: 50%;
+    align-self: center;
+    border-top: 3px dotted #6b7896;
+    margin: 20px 0px;
+}
+
+.title {
   display: block;
   font-size: 24px;
   font-weight: 600;
@@ -199,11 +224,10 @@ div .title {
   color: white;
   border-bottom: 1px;
   position: relative;
-  width: 100%;
-  height: 100%;
+  background-color: #6b7896;
 }
 
-div .title::after {
+.title::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -213,7 +237,7 @@ div .title::after {
   background: #7ed477;
 }
 
-div .title-animate::after {
+.title-animate::after {
   width: 30%;
   animation: fill-border 2s ease-in-out forwards;
 }
@@ -227,8 +251,33 @@ div .title-animate::after {
   }
 }
 
-.first-word {
+.title::first-letter {
   color: #7ed477;
+}
+
+.title .download-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    box-shadow: 3px 4px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7ed477;
+}
+
+.download-btn:hover {
+    background-color: rgb(192, 192, 192);
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.download-btn img {
+    width: 30px;
 }
 
 .row {
@@ -262,27 +311,92 @@ div .title-animate::after {
   flex-grow: 2;
 }
 
+.resume__topic {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  padding: 20px;
+  gap: 0 30px;
+}
+
+.resume__topic img {
+  max-width: 50px;
+}
+
+.resume__topic span {
+  font-size: 20px;
+  letter-spacing: 0.4em;
+  border-bottom: 2px solid #7ed477;
+}
+
+.resume__item {
+  flex: 1 0 auto;
+  max-width: 50%;
+  min-width: 310px;
+  padding: 20px;
+}
+
+.resume__item--time {
+    padding: 3px 8px;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #838383;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.present {
+    border-color: #7ed477;
+    color: #7ed477;
+    font-weight: bold;
+}
+
+.resume__item--title {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(74, 73, 73);
+    margin-bottom: 4px;
+}
+
+.resume__item--place {
+    font-size: 12px;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.resume__item--place::before {
+    content: '•'
+}
+
+.resume__item--text {
+    font-size: 14px;
+    line-height: 25px;
+}
+
 .specs {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0 20px;
+  padding: 8px;
 }
 
 .specs img {
+    align-self:self-start;
   display: block;
   max-width: 150px;
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .specs span {
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 .skills {
   width: 100%;
-  padding: 15px;
+  padding: 20px;
   font-size: 20px;
 }
 
@@ -327,7 +441,7 @@ div .title-animate::after {
 }
 
 .skill-container .percent {
-  text-align: center;
+  text-align: right;
   width: 10%;
 }
 
@@ -445,6 +559,18 @@ div .title-animate::after {
 }
 
 @media (max-width: 455px) {
+  .header__logo {
+    display: none;
+  }
+  .header__logo-sm {
+    display: unset;
+  }
+  .dropbtn {
+    width: 99px;
+  }
+  .dropbtn__first-word {
+    display: none;
+  }
   .sidenav {
     left: 8px;
     width: 45px;

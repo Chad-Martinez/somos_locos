@@ -21,7 +21,7 @@
       sizes="512x512"
       href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/images/icons-512.png"
     />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="../../site.webmanifest" />
     <title>Somos Locos</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +37,7 @@
   </head>
 
   <header class="header">
-    <a class="header__link" href="https://somoslocos.co">
+    <a class="header__link" href="/">
       <span class="header__logo">Somos Locos</span>
       <span class="header__logo-sm">SL</span>
     </a>
@@ -491,11 +491,8 @@
 
       const observer = new IntersectionObserver(
         (entries, observer) => {
-          console.log('Observer Firing');
           entries.forEach((entry) => {
-            console.log('Intersection observed', entry);
             if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-              console.log('Element is visible', entry);
               entry.target.classList.add('title-animate');
               observer.unobserve(entry.target);
             }
@@ -505,7 +502,6 @@
       );
 
       targets.forEach((target) => {
-        console.log('Observing element', target);
         observer.observe(target);
       });
     </script>

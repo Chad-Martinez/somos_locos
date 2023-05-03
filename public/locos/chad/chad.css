@@ -445,6 +445,22 @@ section.internal-lnk {
   width: 10%;
 }
 
+.code {
+  
+  font-size: 28px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.code__img {
+  margin: 15px;
+  max-width: 40px;
+  height: auto;
+}
+
 .footer {
   height: 50px;
 }

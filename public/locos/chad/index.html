@@ -31,9 +31,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="chad.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE="
+      crossorigin="anonymous"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <header class="header">
@@ -42,7 +53,9 @@
       <span class="header__logo-sm">SL</span>
     </a>
     <div class="dropdown">
-      <button class="dropbtn"><span class="dropbtn__first-word">Los</span> <span>Locos</span></button>
+      <button class="dropbtn">
+        <span class="dropbtn__first-word">Los</span> <span>Locos</span>
+      </button>
       <div class="dropdown-content">
         <a href="#">Natalia</a>
         <a href="#">Harrison</a>
@@ -118,33 +131,33 @@
         <div class="title">
           <span>About</span>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="card__row">
+          <div class="card__col">
             Hello World! I am Chad Martinez, a born again coder from the USA.
             I'm a full stack developer specializing in the MERN (MongoDB,
             Express, React, NodeJS) stack. However, I am confortable diving into
             new languages and am a life long learner. Please contact me with
             career inquires if my skillset matches your needs.
           </div>
-          <div class="col">
+          <div class="card__col">
             <div class="demos">
-              <div class="row">
+              <div class="card__row">
                 <div class="title-age">Age. . . . .</div>
                 <div class="demo-item">44</div>
               </div>
-              <div class="row">
+              <div class="card__row">
                 <div class="title-age">Residence. . . . .</div>
                 <div class="demo-item">USA</div>
               </div>
-              <div class="row">
+              <div class="card__row">
                 <div class="title-age">Languages. . . . .</div>
                 <div class="demo-item">English • Spanish</div>
               </div>
-              <div class="row">
+              <div class="card__row">
                 <div class="title-age">Speciality. . . . .</div>
                 <div class="demo-item">MERN</div>
               </div>
-              <div class="row">
+              <div class="card__row">
                 <div class="title-age">For Hire?. . . . .</div>
                 <div class="demo-item">Available</div>
               </div>
@@ -166,13 +179,13 @@
           <span>Resume</span>
           <div class="download-btn">
             <a
-                  href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/files/Chad+Martinez+-+Resume.pdf"
-                  target="_blank"
-                >
-            <img
-              src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/download.png"
-              alt="download"
-            />
+              href="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/files/Chad+Martinez+-+Resume.pdf"
+              target="_blank"
+            >
+              <img
+                src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/download.png"
+                alt="download"
+              />
             </a>
           </div>
         </div>
@@ -183,7 +196,7 @@
           />
           <span>Experience</span>
         </div>
-        <div class="row">
+        <div class="card__row">
           <div class="resume__item">
             <div class="resume__item--time present">
               <span>Mar 2023 • Present</span>
@@ -212,7 +225,8 @@
               <p>
                 Multi-project support. Custom forms built with Sementic UI and
                 React Hook Form. Integration of cellular connected medical
-                equipment with 3rd party API. Particpated in scrum and peer code reviews.
+                equipment with 3rd party API. Particpated in scrum and peer code
+                reviews.
               </p>
             </div>
           </div>
@@ -271,7 +285,7 @@
             </div>
           </div>
         </div>
-        <hr class="divider">
+        <hr class="divider" />
         <div class="resume__topic">
           <img
             src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/education.png"
@@ -279,7 +293,7 @@
           />
           <span>Education</span>
         </div>
-        <div class="row">
+        <div class="card__row">
           <div class="resume__item">
             <div class="resume__item--time">
               <span>Sep 2005 • May 2007</span>
@@ -303,7 +317,7 @@
             </div>
           </div>
         </div>
-        <hr class="divider">
+        <hr class="divider" />
         <div class="resume__topic">
           <img
             src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/coding.png"
@@ -311,8 +325,8 @@
           />
           <span>Speciality</span>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="card__row">
+          <div class="card__col">
             <div class="specs">
               <img
                 src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/mongo.png"
@@ -324,7 +338,7 @@
               >
             </div>
           </div>
-          <div class="col">
+          <div class="card__col">
             <div class="specs">
               <img
                 src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/express.png"
@@ -337,8 +351,8 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
+        <div class="card__row">
+          <div class="card__col">
             <div class="specs">
               <img
                 src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/react.png"
@@ -350,7 +364,7 @@
               >
             </div>
           </div>
-          <div class="col">
+          <div class="card__col">
             <div class="specs">
               <img
                 src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/node.png"
@@ -363,7 +377,7 @@
             </div>
           </div>
         </div>
-        <hr class="divider">
+        <hr class="divider" />
         <div class="resume__topic">
           <img
             src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/skills.png"
@@ -371,7 +385,7 @@
           />
           <span>Skills</span>
         </div>
-        <div class="row">
+        <div class="card__row">
           <div class="skills">
             <div class="skill-container">
               <div class="skill">
@@ -485,21 +499,116 @@
         </div>
       </div>
       <div class="card">
-        <section id="about" class="internal-lnk"></section>
+        <section id="code" class="internal-lnk"></section>
         <div class="title">
           <span>Code</span>
         </div>
-        <div class="row">
-          <div class="col">
-            <div class="code">
-              
-            <a href="https://github.com/Chad-Martinez" target="_blank" class="code">
-              <img class="code__img"
-              src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/github.png"
-              alt="github"
-            />
-            Chad Martinez
+        <div class="card__row">
+          <div class="card__col">
+            <a
+              href="https://github.com/Chad-Martinez"
+              target="_blank"
+              class="code"
+            >
+              <img
+                class="code__img"
+                src="https://somoslocos.s3.us-east-2.amazonaws.com/somos-locos-media-files/icons/github.png"
+                alt="github"
+              />
+              Chad Martinez
             </a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <section id="contact" class="internal-lnk"></section>
+        <div class="title">
+          <span>Contact Me</span>
+        </div>
+        <div class="card__row">
+          <div class="container contact-form">
+            <div class="row">
+              <section
+                class="container col-xs-12 col-sm-8 col-sm-offset-2 col-xl-6 col-xl-offset-3 my-4"
+              >
+                <div class="container" style="width: 100%">
+                  <form
+                    class=""
+                    action="https://qbmhlq91wc.execute-api.us-east-1.amazonaws.com/dev/static-site-mailer"
+                    accept-charset="UTF-8"
+                    method="post"
+                  >
+                    <fieldset>
+                      <br />
+                      <div class="row">
+                        <div class="form-group col-xs-6" id="First_Name__div">
+                          <label for="First_Name">First Name</label>
+                          <input
+                            type="text"
+                            name="firstName"
+                            id="First_Name"
+                            autofocus="autofocus"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group col-xs-6" id="Last_Name__div">
+                          <label for="Last_Name">Last Name</label>
+                          <input
+                            type="text"
+                            name="lastName"
+                            id="Last_Name"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-xs-6" id="Email__div">
+                          <label title="required" for="email">Email *</label>
+                          <input
+                            type="email"
+                            name="email"
+                            id="Email"
+                            required="required"
+                            placeholder="example@example.com"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="form-group col-xs-6" id="Phone__div">
+                          <label for="Phone">Phone</label>
+                          <input
+                            type="tel"
+                            name="phone"
+                            id="Phone"
+                            placeholder="123-456-7890"
+                            class="form-control"
+                          />
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-xs-12" id="Message__div">
+                          <label title="required" for="Message"
+                            >Message *</label
+                          >
+                          <textarea
+                            name="message"
+                            id="Message"
+                            required="required"
+                            class="form-control text-area"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12">
+                          <button type="submit" class="btn-submit">
+                            Submit
+                          </button>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                  <p id="form-response"></p>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -532,6 +641,43 @@
           $(this).addClass('active');
         });
       });
+    </script>
+    <script>
+      (() => {
+        const form = document.querySelector('form');
+        const formResponse = document.getElementById('form-response');
+
+        form.onsubmit = (e) => {
+          e.preventDefault();
+
+          const data = {};
+          const formElements = Array.from(form);
+          formElements.map((input) => (data[input.name] = input.value));
+
+          console.log(JSON.stringify(data));
+
+          var xhr = new XMLHttpRequest();
+          xhr.open(form.method, form.action, true);
+          xhr.setRequestHeader('Accept', 'application/json; charset=utf-8');
+          xhr.setRequestHeader(
+            'Content-Type',
+            'application/json; charset=UTF-8'
+          );
+
+          xhr.send(JSON.stringify(data));
+
+          xhr.onloadend = (response) => {
+            if (response.target.status === 200) {
+              form.reset();
+              formResponse.innerHTML =
+                'Thanks for the message! I’ll be in touch shortly.';
+            } else {
+              formResponse.innerHTML = 'Something went wrong';
+              console.error(JSON.parse(response.target.response).message);
+            }
+          };
+        };
+      })();
     </script>
   </body>
 </html>

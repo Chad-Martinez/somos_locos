@@ -7,7 +7,7 @@
 
 body {
   margin-top: 80px;
-  background: #efefef;
+  background: #efefef !important;
   height: 100vh;
 }
 
@@ -26,8 +26,8 @@ body {
 }
 
 .header__link {
-    text-decoration: none;
-    color: white;
+    text-decoration: none !important;
+    color: white !important;
     font-family: 'Delicious Handrawn', cursive;
     font-size: 36px;
     letter-spacing: 6px;
